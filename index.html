@@ -47,7 +47,6 @@ body {
   overflow: hidden;
 }
 
-/* Subtle diagonal stripe texture */
 .hero::before {
   content: '';
   position: absolute;
@@ -62,7 +61,6 @@ body {
   pointer-events: none;
 }
 
-/* Border frame */
 .hero-frame {
   position: absolute;
   inset: 18px;
@@ -76,7 +74,6 @@ body {
   border: 1px solid rgba(184,146,42,0.18);
 }
 
-/* Corner ornaments */
 .corner {
   position: absolute;
   width: 32px;
@@ -189,7 +186,6 @@ body {
 }
 .hero-cta:hover { background: #c9a23a; transform: translateY(-1px); }
 
-/* Silhouette horse row */
 .horse-row {
   position: absolute;
   bottom: 0;
@@ -292,7 +288,6 @@ input[type="email"]:focus {
 }
 input::placeholder { color: rgba(253,250,244,0.35); }
 
-/* Attending toggle */
 .toggle-group {
   display: flex;
   gap: 0;
@@ -336,7 +331,6 @@ input::placeholder { color: rgba(253,250,244,0.35); }
 .submit-btn:hover { background: #1e3025; transform: translateY(-1px); }
 .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 
-/* Success state */
 .success-card {
   display: none;
   background: rgba(255,255,255,0.08);
@@ -369,7 +363,6 @@ input::placeholder { color: rgba(253,250,244,0.35); }
   line-height: 1.7;
 }
 
-/* Declined state */
 .declined-card {
   display: none;
   background: rgba(255,255,255,0.08);
@@ -570,24 +563,40 @@ footer .footer-brand {
 
 <div style="display:flex;flex-direction:column;gap:2px;">
 
+  <!-- NEW: When should I show up? -->
   <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(184,146,42,0.25);padding:28px 32px;">
+    <p style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:#b8922a;margin-bottom:8px;">When should I show up?</p>
+    <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:rgba(253,250,244,0.85);line-height:1.65;">We'll be set up around noon. Show up anytime after then, and don't worry about being late — we aren't going to start packing up until after the last race and you're welcome to pop in and pop out as you want.</p>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.25);padding:28px 32px;">
     <p style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:#b8922a;margin-bottom:8px;">Is there seating?</p>
     <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:rgba(253,250,244,0.85);line-height:1.65;">No — please make sure to bring your own folding chairs.</p>
   </div>
 
-  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.25);padding:28px 32px;">
+  <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(184,146,42,0.25);padding:28px 32px;">
     <p style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:#b8922a;margin-bottom:8px;">Is there food for purchase?</p>
     <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:rgba(253,250,244,0.85);line-height:1.65;">In years past there have been a hot dog truck and ice cream stand on the grounds. We will also have sandwiches and hors d'oeuvres at the tailgate.</p>
   </div>
 
-  <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(184,146,42,0.25);padding:28px 32px;">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.25);padding:28px 32px;">
     <p style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:#b8922a;margin-bottom:8px;">Drinks?</p>
     <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:rgba(253,250,244,0.85);line-height:1.65;">We'll have beer, seltzer, and wine. Feel free to bring your own as well — but we'll have plenty for all!</p>
   </div>
 
+  <!-- NEW: What should I wear? -->
+  <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(184,146,42,0.25);padding:28px 32px;">
+    <p style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:#b8922a;margin-bottom:8px;">What should I wear?</p>
+    <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:rgba(253,250,244,0.85);line-height:1.65;">The official website has a good section on this. Here's the excerpt:</p>
+    <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;color:rgba(253,250,244,0.7);line-height:1.7;margin-top:14px;font-style:italic;">Ladies — your feet are going to be walking all over a farm like setting while you visit with friends, see the horses in the paddock and shop for all sorts of fun hats and accessories. Flat and comfortable shoes are the order of the day. You will see everything from jeans and tweed to dresses, but, you're not going to the Kentucky derby. Hats are always in order and it is a good idea to bring along a few items for layering — the races run sun, rain or snow!</p>
+    <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;color:rgba(253,250,244,0.7);line-height:1.7;margin-top:10px;font-style:italic;">Gentlemen — Most men will be in sport coats and ties. Hats are always a good idea as are comfortable shoes and a bit of layering depending on the weather. Binoculars are excellent as well!</p>
+    <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:rgba(253,250,244,0.85);line-height:1.65;margin-top:14px;">Our take — Outfits will range from the Kentucky Derby hats, dresses and suits to a much more casual polo and jeans. Wear something you're comfortable in and make sure to check the weather before coming out.</p>
+  </div>
+
   <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(184,146,42,0.25);padding:28px 32px;">
     <p style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:#b8922a;margin-bottom:8px;">Anything else?</p>
-    <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:rgba(253,250,244,0.85);line-height:1.65;">Shoot Jordan or Josh a text and we'll find out for you. Can't wait to see you there! 🐎</p>
+    <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:rgba(253,250,244,0.85);line-height:1.65;">The road that leads into the race event is Madison/Foxcroft. It's the only way in, so expect backed up heavy traffic that afternoon. We do not recommend parking in town and walking — it's a tight road with no sidewalks and not pedestrian friendly. The line of cars took us by surprise the first year, but it moves faster than you expect.</p>
+    <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.1rem;color:rgba(253,250,244,0.85);line-height:1.65;margin-top:10px;">Shoot Jordan or Josh a text and we'll find out for you. Can't wait to see you there! 🐎</p>
   </div>
 
 </div>
